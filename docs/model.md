@@ -1,12 +1,12 @@
 # qgrid model
 ## markup
 ```html
-<q-grid model='gridModel'
-        rows='rows'
-        columns = columns;
-		  selection='selection'
-		  on:selectionChanged='selectionChanged'>
-  <q-grid:head sticky="true"></q-grid:head>
+<q-grid model="gridModel"
+		  rows="rows"
+		  columns="columns"
+		  selection="selection"
+		  on:selectionChanged="selectionChanged">
+  <q-grid:head sticky="false"></q-grid:head>
 </q-grid>
 ```
 ## user script
@@ -15,17 +15,17 @@ controller.$inject = ['qgrid'];
 function controller(qgrid){
 	var gridModel = qgrid.model();
 	$scope.gridModel = gridModel;
-	$scope.selection = []
-	#scope.rows = [];
+	$scope.selection = [];
+	$scope.rows = [];
 	$scope.columns = [];
 	$scope.selectionChanged = function(e) {
 	};
 
 	gridModel
-	   .data({
+		.data({
 			rows: [], // ?? another way?
 			columns: [] // ?? should be there?
-	   })
+		})
 		.header({sticky: false})
 		.vscroll({threshold: 40})
 		.hscroll({threshold: 30})
