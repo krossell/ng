@@ -1,1 +1,1 @@
-text eol=lf
+*.md *.json *.js *.html *.css *.scss text=lf
