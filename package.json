@@ -77,9 +77,6 @@
     "webpack-merge": "~1.0.1"
   },
   "scripts": {
-    "analyze": "webpack --json | webpack-bundle-size-analyzer",
-    "clean": "npm cache clean && rimraf -- node_modules doc typings coverage dist",
-    "build:dev": "set NODE_ENV=dev && webpack -p",
     "build:demo": "set NODE_ENV=demo && webpack -p",
     "build:prod": "set NODE_ENV=prod && webpack -p",
     "start": "set NODE_ENV=dev && webpack-dev-server --port 3030 --inline --hot",

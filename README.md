@@ -13,11 +13,18 @@ https://klumba12.github.io/qgrid/
 
 ## development
 * `$ npm install` prerequisites
-* `$ npm run start` start the webpack development server on [http:\\\\localhost:3030\demo](http:\\localhost:3030\demo)
+* `$ npm run start` start the webpack development server on [localhost:3030\demo](http:\\localhost:3030\demo)
 * `$ npm run build:prod` create a js bundle with webpack
 * `$ npm run lint` run code quality tests
 * `$ npm run test` run tests
 * `$ npm run test:debug` watch and debug tests
+
+## development guide
+* [grid model](https://github.com/klumba12/qgrid/blob/master/docs/dev/model.md)
+* [ng components and directives](https://github.com/klumba12/qgrid/blob/master/docs/dev/component.md)
+* [unit tests](https://github.com/klumba12/qgrid/blob/master/docs/dev/test.md)
+* [npm commands](https://github.com/klumba12/qgrid/blob/master/docs/dev/npm.md)
+* [webpack](https://github.com/klumba12/qgrid/blob/master/docs/dev/wepback.md)
 
 ## get started
 ```html
