@@ -1,7 +1,6 @@
 <tr>
-	<th ng-if="$view.mode === 'group'">Group</th>
 	<th ng-repeat="$column in $view.columns track by $index"
 		 class="{{::$column.key}}"
-		 q-grid-core:th>
+		 q-grid-core:th="row">
 	</th>
 </tr>

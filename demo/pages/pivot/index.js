@@ -2,6 +2,9 @@ Controller.$inject = ['$http'];
 export default function Controller($http) {
 	const ctrl = this;
 
+	// TODO: add path property
+	this.getGender = item => item.gender;
+
 	this.rows = [];
 	this.columns = [
 		{
