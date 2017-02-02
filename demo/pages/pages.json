@@ -20,6 +20,10 @@
 		"title": "Column"
 	},
 	{
+		"path": "column-path",
+		"title": "Column Path"
+	},
+	{
 		"path": "row-index",
 		"title": "Row Index"
 	},
