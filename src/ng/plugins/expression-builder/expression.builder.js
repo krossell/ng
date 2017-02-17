@@ -1,11 +1,7 @@
 import PluginComponent from '../plugin.component';
 import Command from 'core/infrastructure/command';
 import TemplatePath from 'core/template/template.path';
-import Aggregation from 'core/services/aggregation';
-import * as columnService from 'core/column/column.service';
-import {isFunction, noop} from 'core/services/utility';
 import {EXPRESSION_BUILDER_NAME} from '../definition';
-import PipeUnit from 'core/pipe/units/pipe.unit';
 
 TemplatePath
 	.register(EXPRESSION_BUILDER_NAME, () => {
