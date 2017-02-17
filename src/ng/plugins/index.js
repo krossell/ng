@@ -4,6 +4,7 @@ import GroupBar from './group-bar/group.bar';
 import PivotBar from './pivot-bar/pivot.bar';
 import SelectionBar from './selection-bar/selection.bar';
 import Visibility from './visibility/visibility';
+import ExpressionBuilder from './expression-builder/expression.builder';
 import ColumnChooser from './column-chooser/column.chooser';
 import ColumnFilter from './column-filter/column.filter';
 import ColumnFilterPanel from './column-filter/column.filter.panel';
@@ -34,6 +35,7 @@ export default angular
 	.component(def.POPUP_HEAD_NAME, PopupHead)
 	.component(def.POPUP_BODY_NAME, PopupBody)
 	.component(def.POPUP_PANEL_NAME, PopupPanel)
+	.component(def.EXPRESSION_BUILDER_NAME, ExpressionBuilder)
 	.service(def.POPUP_SERVICE, PopupService)
 	.config(Setup)
 	.name;
@@ -52,6 +54,7 @@ function Setup(qgridThemeProvider) {
 		theme.put('qgrid.plugin.visibility.tpl.html', require('./visibility/visibility.html'));
 		theme.put('qgrid.plugin.column-chooser.tpl.html', require('./column-chooser/column.chooser.html'));
 		theme.put('qgrid.plugin.column-filter.tpl.html', require('./column-filter/column.filter.html'));
+		theme.put('qgrid.plugin.expression-builder.tpl.html', require('./expression-builder/expression.builder.html'));
 
 		theme.put('qgrid.plugin.popup.tpl.html', require('./popup/popup.html'));
 		theme.put('qgrid.plugin.popup-panel.tpl.html', require('./popup/popup.panel.html'));

@@ -25,6 +25,7 @@ import DragModel from 'core/drag/drag.model';
 
 import PopupModel from 'ng/plugins/popup/popup.model';
 import ColumnChooserModel from 'ng/plugins/column-chooser/column.chooser.model';
+import ExpressionBuilderModel from 'ng/plugins/expression-builder/expression.builder.model';
 
 import ng from './ng';
 
@@ -52,6 +53,7 @@ Model.register('grid', GridModel)
 	.register('columnChooser', ColumnChooserModel)
 	.register('filter', FilterModel)
 	.register('drag', DragModel)
-	.register('popup', PopupModel);
+	.register('popup', PopupModel)
+	.register('expressionBuilder', ExpressionBuilderModel);
 
 export default ng;
