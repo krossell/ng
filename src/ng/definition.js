@@ -42,3 +42,4 @@ export const ON_DROP_NAME = `${GRID}OnDrop`;
 export const INDETERMINATE_NAME = `${GRID}Indeterminate`;
 export const FOCUS_NAME = `${GRID}Focus`;
 export const RESIZE_NAME = `${GRID}Resize`;
+export const AUTOSIZE_NAME = `${GRID}Autosize`;
